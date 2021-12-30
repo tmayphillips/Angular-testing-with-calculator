@@ -90,6 +90,7 @@ describe('CalculatorComponent', () => {
     const app = fixture.componentInstance;
     const compiled = fixture.nativeElement as HTMLElement
     const inputElement = compiled.querySelector('input')
+    app.value = '17+2'
     app.clear()
     fixture.detectChanges();
     expect(inputElement?.value).toBe('')
